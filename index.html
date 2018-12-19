@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Final - El DOM y el BOM</title>
+		<script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+		<script src="js/index.js" language="javascript" type="text/javascript"></script>
+		<link rel=stylesheet type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	</head>
+	<body>
+		<div id="container">
+			<div class="row center ">
+			    <div class="col s12 ">
+			      <div class="card cyan login">
+			        <div class="card-content white-text">
+			          <span class="card-title"><b>Registro Estudiante</b></span>
+			        </div>
+			        <div class="card-action form-container ">
+						<form action="">
+							<div className="col s12 input-field">
+			                    <input type="text" ref="text" id="codigo" class="validate black-text center" required disabled/>
+			                	<label htmlFor="codigo" class="white-text"><b>Codigo</b></label>
+			                </div>
+			                <div className="col s4 input-field">
+			                    <input type="text" ref="text" id="nombre" class="validate black-text center" required />
+			                	<label htmlFor="nombre" class="white-text"><b>Numero</b></label>
+			                </div>
+			                <div className="col s4 offset-4 input-field">
+			                    <input type="number" ref="number" max="10" id="nota" className="validate black-text center" required />
+			                	<label htmlFor="nota" class="white-text"><b>Nota</b></label>
+			                </div>
+			                <br><div class="divider"></div> <br>
+							<button class="btn waves-effect waves-light col s12"  id="b_registrar" name="action">Registrar Estudiante</button><br><br>
+						</form>
+
+						<button class="btn waves-effect waves-light" type="submit" name="action" id="b_promedio">Mostrar Promedio</button>
+						<button class="btn waves-effect waves-light" type="submit" name="action" id="b_mayor">Mostrar Nota Mayor</button>
+						<button class="btn waves-effect waves-light" type="submit" name="action" id="b_menor">Mostrar Nota Menor</button>
+						<button class="btn waves-effect waves-light" type="submit" name="action" id="b_restablecer">Restablecer</button>
+
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <div id="row center">
+			  	<div class="col s12 ">
+			      <div class="card blue-grey  login">
+			        <div class="card-content white-text">
+			          <span class="card-title"><b>Listado de Estudiantes</b></span>
+
+			        </div>
+			        <div class="card-action">
+						 <div class="row">
+						  <div class="row col s12">
+						   <div id="post">
+						   		<table class="tabla">
+						   			<thead>
+						   				<tr>
+						   					<th>Codigo</th>
+						   					<th>Nombre</th>
+						   					<th>Nota</th>
+						   					<th>Editar</th>
+						   					<th>Eliminar</th>
+						   				</tr>
+						   			</thead>
+						   			<tbody id="contenido-tabla">
+										
+						   			</tbody>
+						   		</table>
+
+						   </div>
+						  </div>
+						 </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+
+		  </div>
+	</body>
+</html>
